@@ -84,7 +84,7 @@ stages:
                   [
                     {
                       "name": "MyShuttleDb",
-                      "value": "jdbc:mysql://$(MySqlServer).mysql.database.azure.com:3306/alm?useSSL=true&requireSSL=false"; myDbConn = DriverManager.getConnection(url, "$(MySqlUserName)@$(MySqlServer)", $(MySqlPassword));",
+                      "value": 'jdbc:mysql://$(MySqlServer).mysql.database.azure.com:3306/alm?useSSL=true&requireSSL=false"; myDbConn = DriverManager.getConnection(url, "$(MySqlUserName)@$(MySqlServer)", $(MySqlPassword));',
                       "type": "MySql",
                       "slotSetting": false
                     }
